@@ -30,6 +30,7 @@ def sleep():
     time.sleep(20)
     return jsonify({"task": "finished!"})
 
+
 @socketio.event
 def my_event(message):
     session['receive_count'] = session.get('receive_count', 0) + 1
